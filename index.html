@@ -1,0 +1,304 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Responsive Coffee Shop Website</title>
+
+		<link rel="stylesheet" href="styles.css">
+
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	</head>
+	<body>
+		<nav class="nav">
+			<ion-icon class="burger-btn" name="grid-outline"></ion-icon>
+
+			<h2 class="logo">Steam & Sip Café</h2>
+
+			<div class="nav-menus">
+				<a href="#">Home</a>
+				<a href="#product">Our Product</a>
+				<a href="#story">About</a>
+				<a href="#testimoni">Testimonials</a>
+			</div>
+		</nav>
+
+		<header>
+			<div class="header-top">
+				<div class="top-left">
+					<h1><span>Perfect</span> Place for <br>
+						Perfect <span>Coffee</span></h1>
+						<p>Indulge in the ultimate coffee experience at Steam & Sip Café. Our passion for crafting exceptional coffee has made us a beloved destination for coffee lovers everywhere. Whether you're a connoisseur or just starting your coffee journey, we have something to delight your senses.</p>
+				</div>
+
+				<div class="top-right">
+					<img src="images/header.jpg">
+				</div>
+			</div>
+
+			<div class="header-bottom">
+				<div class="header-detail">
+					<h2>30+</h2>
+					<p>All of menus</p>
+				</div>
+
+				<div class="header-detail">
+					<h2>3,800+</h2>
+					<p>Daily orders</p>
+				</div>
+
+				<div class="header-detail">
+					<h2>12+</h2>
+					<p>Branch stores</p>
+				</div>
+			</div>
+		</header>
+
+
+		<section class="product" id="product">
+			<h2 class="title">The best products we have</h2>
+			<div class="product-filter">
+				<button class="btn-filter" data-filter="*">All</button>
+				<button class="btn-filter" data-filter=".coffee">Coffee</button>
+				<button class="btn-filter" data-filter=".non-coffee">Non Coffee</button>
+				<button class="btn-filter" data-filter=".cakes">Cakes</button>
+			</div>
+
+			<div class="product-list" data-ref="product-list">
+				<div class="product-card coffee" data-order="1">
+					<div class="product-image">
+						<img src="images/frappe.jpg">
+					</div>
+					<div class="product-detail">
+						<h4>Frappe</h4>
+						<small>A refreshing and creamy blend of coffee, milk, and ice, topped with whipped cream.</small>
+						<div class="product-price">
+							<p>Rs. 399</p>
+							<ion-icon class="heart" name="heart" ></ion-icon>
+						</div>
+					</div>
+				</div>
+
+				<div class="product-card non-coffee" data-order="2">
+					<div class="product-image">
+						<img src="images/mint-tea.jpg">
+					</div>
+					<div class="product-detail">
+						<h4>Iced Mint Green Tea</h4>
+						<small>A refreshing blend of green tea infused with cooling mint, served over ice.</small>
+						<div class="product-price">
+							<p>Rs. 249</p>
+							<ion-icon class="heart" name="heart" ></ion-icon>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="product-card cakes" data-order="3">
+					<div class="product-image">
+						<img src="images/cupcake.jpg">
+					</div>
+					<div class="product-detail">
+						<h4>Strawberry Cupcakes</h4>
+						<small>Moist and fluffy cupcakes infused with real strawberries, topped with creamy frosting.</small>
+						<div class="product-price">
+							<p>Rs. 279</p>
+							<ion-icon class="heart" name="heart" ></ion-icon>
+						</div>
+					</div>
+				</div>
+
+				<div class="product-card cakes" data-order="4">
+					<div class="product-image">
+						<img src="images/pancake.jpg">
+					</div>
+					<div class="product-detail">
+						<h4>Pancakes with Berries</h4>
+						<small>Fluffy pancakes served with a generous topping of fresh berries and maple syrup.</small>
+						<div class="product-price">
+							<p>Rs. 239</p>
+							<ion-icon class="heart" name="heart" ></ion-icon>
+						</div>
+					</div>
+				</div>
+
+				<div class="product-card non-coffee" data-order="5">
+					<div class="product-image">
+						<img src="images/lemon-tea.jpg">
+					</div>
+					<div class="product-detail">
+						<h4>Lemon Tea</h4>
+						<small>Refreshing lemon-infused tea, served hot or cold with a hint of sweetness.</small>
+						<div class="product-price">
+							<p>Rs. 259</p>
+							<ion-icon class="heart" name="heart" ></ion-icon>
+						</div>
+					</div>
+				</div>
+
+				<div class="product-card coffee" data-order="6">
+					<div class="product-image">
+						<img src="images/latte.jpg">
+					</div>
+					<div class="product-detail">
+						<h4>Latte</h4>
+						<small>Smooth espresso mixed with steamed milk, topped with a creamy foam.</small>
+						<div class="product-price">
+							<p>Rs. 370</p>
+							<ion-icon class="heart" name="heart" ></ion-icon>
+						</div>
+					</div>
+				</div>
+
+				<div class="product-card coffee" data-order="7">
+					<div class="product-image">
+						<img src="images/mocca.jpg">
+					</div>
+					<div class="product-detail">
+						<h4>Mocca</h4>
+						<small>Rich espresso combined with velvety chocolate and steamed milk.</small>
+						<div class="product-price">
+							<p>Rs. 345</p>
+							<ion-icon class="heart" name="heart" ></ion-icon>
+						</div>
+					</div>
+				</div>
+
+				<div class="product-card cakes" data-order="8">
+					<div class="product-image">
+						<img src="images/tiramisu.jpg">
+					</div>
+					<div class="product-detail">
+						<h4>Tiramisu</h4>
+						<small>Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</small>
+						<div class="product-price">
+							<p>Rs. 315</p>
+							<ion-icon class="heart" name="heart" ></ion-icon>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="story" id="story">
+			<div class="story-left">
+				<div class="story-column">
+					<img src="images/story1.jpg">
+					<img src="images/story2.jpg">
+				</div>
+
+				<div class="story-column">
+					<img src="images/story3.jpg">
+					<img src="images/story6.jpg">
+				</div>
+
+				<div class="story-column">
+					<img src="images/story4.jpg">
+					<img src="images/story5.jpg">	
+				</div>
+			</div>
+
+			<div class="story-right">
+				<h2 class="title">Our story for the best <br>coffee in Town</h2>
+				<p>At Steam & Sip Café, our story is as rich as our coffee. It all started with a passion for bringing people together over a shared love of exceptional coffee. From our humble beginnings to becoming a beloved fixture in the community, our commitment to quality and community has never wavered.</p>
+			</div>
+		</section>
+
+		<section class="testimoni" id="testimoni">
+			<h2 class="title">Customers Say</h2>
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<p>The coffee at Steam & Sip Café is simply unbeatable. Every cup is a masterpiece of flavor and freshness. I'm a customer for life!</p>
+						<div class="testimoni-pic">
+							<img src="images/profile1.jpg">
+							<h4>John Smith</h4>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<p>Inviting ambiance, expertly brewed coffee, and tasty snacks. Whether you're working solo or chatting with friends, it's a delightful place to be.</p>
+						<div class="testimoni-pic">
+							<img src="images/profile2.jpg">
+							<h4>Taylor Tama</h4>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<p>Downtown's oasis for expertly crafted lattes and a relaxing vibe. Ideal for starting your day or unwinding.</p>
+						<div class="testimoni-pic">
+							<img src="images/profile3.jpg">
+							<h4>Anupama</h4>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<p>Hidden gem with aromatic pour-over coffee and serene ambiance. Don't miss their delectable cupcakes!</p>
+						<div class="testimoni-pic">
+							<img src="images/profile4.jpg">
+							<h4>Albert John</h4>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<p>Cheerful café offering refreshing iced mint tea and delectable cupcakes. The bright ambiance creates the perfect atmosphere for any day.</p>
+						<div class="testimoni-pic">
+							<img src="images/profile5.jpg">
+							<h4>Julia Robert</h4>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<p>Cozy corner spot with rich mocca and heavenly cupcakes. Friendly staff, perfect for a quiet break.</p>
+						<div class="testimoni-pic">
+							<img src="images/profile6.jpg">
+							<h4>Angelia</h4>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+
+
+		<footer>
+			<div class="footer-wrapper">
+				<h2 class="title">Join us for a coffee!</h2>
+				<div class="footer-desc">
+					<p>Ready to experience the perfect cup?</p>
+					<button class="footer-btn btn-type1">Contact Us</button>
+					<button class="footer-btn btn-type2">Our Product</button>
+				</div>
+			</div>
+			<hr class="divider">
+			<div class="footer-logo">Steam & Sip Café</div>
+			<div class="social-media">
+				<a href="#" class="media-icon"><ion-icon name="logo-youtube"></ion-icon></a>
+				<a href="#" class="media-icon"><ion-icon name="logo-instagram"></ion-icon></a>
+				<a href="#" class="media-icon"><ion-icon name="logo-twitter"></ion-icon></a>
+				<a href="#" class="media-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+			</div>
+			<div class="copyright">Copyright 2024 Steam & Sip Café</div>
+		</footer>
+
+
+
+	</body>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+	<script src="script.js"></script>
+
+</html>
